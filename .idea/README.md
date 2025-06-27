@@ -8,3 +8,9 @@ mascota.
 -Poder ingresar 
 -Solicitar un informe de los datos de las mascotas
 -Poder almacenar dichos datos y volverlos a ver cuando sea necesario
+
+✅✅✅AVANCES✅✅✅
+✔️Conseguimos realizar el repositorio
+✔️Conseguimos colocar al otro como contribuidor
+✔️Conseguimos hacer el archivo README.md YEIIIIIII
+✔️Realizamos el plan de trabajo
