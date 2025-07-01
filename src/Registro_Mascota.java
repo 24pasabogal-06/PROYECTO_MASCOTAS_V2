@@ -52,4 +52,5 @@ public class Registro_Mascota extends JPanel {
             combo.addItem(d);
         }
     }
+
 }
