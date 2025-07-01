@@ -16,7 +16,7 @@ public class Registro_Mascota extends JPanel {
         JTextField txtTipo = new JTextField();
 
         JLabel lblDueno = new JLabel("Dueño:");
-        JComboBox<Dueno> cmbDuenos = new JComboBox<>();
+        JComboBox<Dueño> cmbDuenos = new JComboBox<>();
 
         JButton btnGuardar = new JButton("Guardar");
 
@@ -33,7 +33,7 @@ public class Registro_Mascota extends JPanel {
         add(btnGuardar);
 
         btnGuardar.addActionListener(e -> {
-            Dueno duenoSeleccionado = (Dueno) cmbDuenos.getSelectedItem();
+            Dueño duenoSeleccionado = (Dueño) cmbDuenos.getSelectedItem();
             if (duenoSeleccionado != null) {
                 Mascota nueva = new Mascota(txtNombre.getText(), txtTipo.getText(), duenoSeleccionado);
                 listaMascotas.add(nueva);
@@ -46,9 +46,9 @@ public class Registro_Mascota extends JPanel {
         });
     }
 
-    private void updateDuenosCombo(JComboBox<Dueno> combo) {
+    private void updateDuenosCombo(JComboBox<Dueño> combo) {
         combo.removeAllItems();
-        for (Dueno d : registro.listaDuenos) {
+        for (Dueño d : registro.listaDueños) {
             combo.addItem(d);
         }
     }

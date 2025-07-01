@@ -4,7 +4,15 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class registro extends JPanel {
-    public static ArrayList<Dueno> listaDuenos = new ArrayList<>();
+    private JTextField textField1;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JTextField textField4;
+    private JTextField textField5;
+    private JTextField textField6;
+    private JTextField textField7;
+    private JButton registrarButton;
+    public static ArrayList<Dueño> listaDueños = new ArrayList<>();
 
     public registro() {
         setLayout(new GridLayout(3, 2));
@@ -25,8 +33,8 @@ public class registro extends JPanel {
         add(btnGuardar);
 
         btnGuardar.addActionListener(e -> {
-            Dueno nuevo = new Dueno(txtNombre.getText(), txtCedula.getText());
-            listaDuenos.add(nuevo);
+            Dueño nuevo = new Dueño(txtNombre.getText(), txtCedula.getText());
+            listaDueños.add(nuevo);
             JOptionPane.showMessageDialog(this, "Dueño registrado.");
             txtNombre.setText("");
             txtCedula.setText("");
