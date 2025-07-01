@@ -1,16 +1,10 @@
-import java.awt.event.ActionListener;
-
-
+// Main.java
 import javax.swing.*;
 
- public static void main(String[] args) {
-    JFrame frame = new JFrame("Interfaz UI");
-    frame.setContentPane(new GUI.Interfaz()_UI().panel);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    frame.pack();
-    frame.setVisible(true);
-
-
-    System.out.println("Hello, World!");
-
+public class Main {
+   public static void main(String[] args) {
+      SwingUtilities.invokeLater(() -> {
+         new Interfaz();
+      });
+   }
 }
