@@ -14,3 +14,4 @@ mascota.
 ✔️Conseguimos colocar al otro como contribuidor
 ✔️Conseguimos hacer el archivo README.md YEIIIIIII
 ✔️Realizamos el plan de trabajo
+✔️Realizamos la interfaz(falta que funcione jajaj)
