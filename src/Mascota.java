@@ -1,12 +1,12 @@
 public class Mascota {
     private String nombre;
     private String tipo;
-    private Dueño dueno;
+    private Dueño Dueño;
 
     public Mascota(String nombre, String tipo, Dueño dueno) {
         this.nombre = nombre;
         this.tipo = tipo;
-        this.dueno = dueno;
+        this.Dueño = dueno;
     }
 
     public String getNombre() {
@@ -18,11 +18,11 @@ public class Mascota {
     }
 
     public Dueño getDueño() {
-        return dueno;
+        return Dueño;
     }
 
     @Override
     public String toString() {
-        return nombre + " - Tipo: " + tipo + ", Dueño: " + dueno.getNombre();
+        return nombre + " - Tipo: " + tipo + ", Dueño: " + Dueño.getNombre();
     }
 }
