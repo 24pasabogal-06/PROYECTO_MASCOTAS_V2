@@ -4,9 +4,11 @@ public class Dueño {
     private String Direccion;
     private String Email;
 
-    public Dueño(String nombre, String cedula) {
+    public Dueño(String nombre, String cedula,  String Direccion, String Email) {
         this.nombre = nombre;
         this.cedula = cedula;
+        this.Direccion = Direccion;
+        this.Email = Email;
     }
 
     public String getNombre() {

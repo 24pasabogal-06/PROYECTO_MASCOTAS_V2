@@ -21,7 +21,7 @@ public class Historial_mascotas extends JPanel {
 
     private void actualizarLista() {
         area.setText("");
-        for (Mascota m : Registro_Mascota.Reporte) {
+        for (Mascota m : RegistroMascota.Reporte) {
             area.append(m.toString() + "\n");
         }
     }

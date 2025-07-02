@@ -2,19 +2,19 @@ import javax.swing.*;
 
 public class Main {
    // Ventanas (instancias de cada interfaz)
-   static Pagina_Principal pagina_Principal;
+   static PaginaPrincipal pagina_Principal;
    static Historial_mascotas Historial_mascotas;
-   static registro registro;
-   static Registro_Mascota registroMascota;
+   static RegistroUsuario registro_usuario;
+   static RegistroMascota registroMascota;
    static Reporte reporte;
 
    public static void main(String[] args) {
       // Iniciar la aplicación en el hilo de eventos
       SwingUtilities.invokeLater(() -> {
-         pagina_Principal = new Pagina_Principal();
+         pagina_Principal = new PaginaPrincipal();
          Historial_mascotas = new Historial_mascotas();
-         registro = new registro();
-         registroMascota = new Registro_Mascota();
+         registro_usuario = new RegistroUsuario();
+         registroMascota = new RegistroMascota();
          reporte = new Reporte();
 
          mostrarPagina_Principal();
@@ -29,7 +29,7 @@ public class Main {
 
    public static void mostrarRegistroUsuario() {
       pagina_Principal.setVisible(false);
-      registro.setVisible(true);
+      registro_usuario.setVisible(true);
    }
 
    public static void mostrarHistorialMascotas() {
@@ -68,8 +68,8 @@ public class Main {
       });
 
       // Registro Usuario
-      registro.registrarButton.addActionListener(e -> {
-         registro.setVisible(false);
+      registro_usuario.registrarButton.addActionListener(e -> {
+         registro_usuario.setVisible(false);
          mostrarPagina_Principal();
       });
 
