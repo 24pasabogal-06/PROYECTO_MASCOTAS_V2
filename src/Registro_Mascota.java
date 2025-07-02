@@ -5,6 +5,17 @@ import java.util.ArrayList;
 
 public class Registro_Mascota extends JPanel {
     public static ArrayList<Mascota> listaMascotas = new ArrayList<>();
+    private JTextField textField1;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JTextField textField4;
+    private JTextField textField5;
+    private JTextField textField6;
+    private JTextField textField7;
+    private JTextField textField8;
+    private JTextField textField9;
+    private JTextField textField10;
+    private JTextField textField11;
 
     public Registro_Mascota() {
         setLayout(new GridLayout(4, 2));
