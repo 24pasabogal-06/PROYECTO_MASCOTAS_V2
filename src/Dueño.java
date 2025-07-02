@@ -17,6 +17,10 @@ public class Dueño {
         return cedula;
     }
 
+    public String getDireccion() {return Direccion;}
+
+    public String getEmail() {return Email;}
+
     @Override
     public String toString() {
         return nombre + " - Cédula: " + cedula;
