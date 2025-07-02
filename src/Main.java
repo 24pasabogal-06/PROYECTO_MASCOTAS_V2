@@ -3,7 +3,7 @@ import javax.swing.*;
 public class Main {
    // Ventanas (instancias de cada interfaz)
    static PaginaPrincipal pagina_Principal;
-   static Historial_mascotas Historial_mascotas;
+   static VerMascotas Historial_mascotas;
    static RegistroUsuario registro_usuario;
    static RegistroMascota registroMascota;
    static Reporte reporte;
@@ -12,7 +12,7 @@ public class Main {
       // Iniciar la aplicación en el hilo de eventos
       SwingUtilities.invokeLater(() -> {
          pagina_Principal = new PaginaPrincipal();
-         Historial_mascotas = new Historial_mascotas();
+         Historial_mascotas = new VerMascotas();
          registro_usuario = new RegistroUsuario();
          registroMascota = new RegistroMascota();
          reporte = new Reporte();
